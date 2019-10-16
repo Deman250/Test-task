@@ -38,7 +38,7 @@ const Wed = () => (
         <span className="temp">+20</span>
       </li>
     </ul>
-    <img className="weather-image" src={cloudy} alt="" />
+    <img className="day-image" src={cloudy} alt="" />
   </div>
 );
 

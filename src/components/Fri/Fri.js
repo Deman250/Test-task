@@ -38,7 +38,7 @@ const Fri = () => (
         <span className="temp">+22</span>
       </li>
     </ul>
-    <img className="weather-image" src={sun} alt="" />
+    <img className="day-image" src={sun} alt="" />
   </div>
 );
 

@@ -38,7 +38,7 @@ const Tue = () => (
         <span className="temp">+16</span>
       </li>
     </ul>
-    <img className="weather-image" src={storm} alt="" />
+    <img className="day-image" src={storm} alt="" />
   </div>
 );
 
