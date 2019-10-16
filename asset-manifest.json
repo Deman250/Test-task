@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react_todo-app/static/css/main.5da280ae.chunk.css",
+    "main.js": "/react_todo-app/static/js/main.2ee37c79.chunk.js",
+    "main.js.map": "/react_todo-app/static/js/main.2ee37c79.chunk.js.map",
+    "runtime~main.js": "/react_todo-app/static/js/runtime~main.df364381.js",
+    "runtime~main.js.map": "/react_todo-app/static/js/runtime~main.df364381.js.map",
+    "static/js/2.40a39426.chunk.js": "/react_todo-app/static/js/2.40a39426.chunk.js",
+    "static/js/2.40a39426.chunk.js.map": "/react_todo-app/static/js/2.40a39426.chunk.js.map",
+    "index.html": "/react_todo-app/index.html",
+    "precache-manifest.24bcc948f07241e2b49bc57cb9bb171d.js": "/react_todo-app/precache-manifest.24bcc948f07241e2b49bc57cb9bb171d.js",
+    "service-worker.js": "/react_todo-app/service-worker.js",
+    "static/css/main.5da280ae.chunk.css.map": "/react_todo-app/static/css/main.5da280ae.chunk.css.map",
+    "static/media/index.css": "/react_todo-app/static/media/bg.8b01731d.jpg",
+    "static/media/cloudy.svg": "/react_todo-app/static/media/cloudy.bdfd9066.svg",
+    "static/media/light.svg": "/react_todo-app/static/media/light.6f7bcdff.svg",
+    "static/media/snow.svg": "/react_todo-app/static/media/snow.1e3e04ff.svg",
+    "static/media/storm.svg": "/react_todo-app/static/media/storm.381339ec.svg",
+    "static/media/sun.svg": "/react_todo-app/static/media/sun.58c341f0.svg"
+  }
+}
