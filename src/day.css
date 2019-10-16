@@ -1,0 +1,46 @@
+.day {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.day-header {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.day-temp-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.day-time {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  padding: auto;
+  border: 2px solid darkblue;
+  background-color: lightblue;
+}
+
+.time {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.temp {
+  color: darkblue;
+  font-size: 20px;
+  margin: 0 !important;
+}
+
+.day-image {
+  width: 130px;
+  height: 130px;
+}

@@ -1,75 +1,82 @@
 import React from 'react';
+import {
+  BrowserRouter,
+  Route,
+  Switch,
+  NavLink,
+} from 'react-router-dom';
 
-function App() {
-  return (
-    <section className="todoapp">
-      <header className="header">
-        <h1>todos</h1>
+// Images
+import cloudy from './images/cloudy.svg';
+import light from './images/light.svg';
+import snow from './images/snow.svg';
+import storm from './images/storm.svg';
+import sun from './images/sun.svg';
 
-        <input
-          className="new-todo"
-          placeholder="What needs to be done?"
-        />
-      </header>
+// Components
+import Mon from './components/Mon/Mon';
+import Tue from './components/Tue/Tue';
+import Wed from './components/Wed/Wed';
+import Thu from './components/Thu/Thu';
+import Fri from './components/Fri/Fri';
 
-      <section className="main" style={{ display: 'block' }}>
-        <input type="checkbox" id="toggle-all" className="toggle-all" />
-        <label htmlFor="toggle-all">Mark all as complete</label>
+// Css
+import './day.css';
+import './index.css';
 
-        <ul className="todo-list">
-          <li className="">
-            <div className="view">
-              <input type="checkbox" className="toggle" id="todo-1" />
-              <label htmlFor="todo-1">sdfsdfsdf</label>
-              <button type="button" className="destroy" />
-            </div>
-          </li>
+const App = () => (
+  <BrowserRouter>
+    <ul className="week-list">
+      <li className="week-day">
+        <h3 className="header">
+          <NavLink className="day-link" to="/mon">Monday</NavLink>
+        </h3>
+        <img className="weather-image" src={light} alt="" />
+        <span className="highest">+24</span>
+        <span className="lowest">+13</span>
+      </li>
+      <li className="week-day">
+        <h3 className="header">
+          <NavLink className="day-link" to="/tue">Tuesday</NavLink>
+        </h3>
+        <img className="weather-image" src={storm} alt="" />
+        <span className="highest">+23</span>
+        <span className="lowest">+11</span>
+      </li>
+      <li className="week-day">
+        <h3 className="header">
+          <NavLink className="day-link" to="/wed">Wednesday</NavLink>
+        </h3>
+        <img className="weather-image" src={cloudy} alt="" />
+        <span className="highest">+27</span>
+        <span className="lowest">+18</span>
+      </li>
+      <li className="week-day">
+        <h3 className="header">
+          <NavLink className="day-link" to="/thu">Thursday</NavLink>
+        </h3>
+        <img className="weather-image" src={snow} alt="" />
+        <span className="highest">+3</span>
+        <span className="lowest">-7</span>
+      </li>
+      <li className="week-day">
+        <h3 className="header">
+          <NavLink className="day-link" to="/fri">Friday</NavLink>
+        </h3>
+        <img className="weather-image" src={sun} alt="" />
+        <span className="highest">+28</span>
+        <span className="lowest">+20</span>
+      </li>
+    </ul>
 
-          <li className="">
-            <div className="view">
-              <input type="checkbox" className="toggle" id="todo-2" />
-              <label htmlFor="todo-2">sakgjdfgkhjasgdhjfhs</label>
-              <button type="button" className="destroy" />
-            </div>
-          </li>
-
-          <li className="">
-            <div className="view">
-              <input type="checkbox" className="toggle" id="todo-3" />
-              <label htmlFor="todo-3">sddfgdfgdf</label>
-              <button type="button" className="destroy" />
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <footer className="footer" style={{ display: 'block' }}>
-        <span className="todo-count">
-          3 items left
-        </span>
-
-        <ul className="filters">
-          <li>
-            <a href="#/" className="selected">All</a>
-          </li>
-
-          <li>
-            <a href="#/active">Active</a>
-          </li>
-
-          <li>
-            <a href="#/completed">Completed</a>
-          </li>
-        </ul>
-
-        <button
-          type="button"
-          className="clear-completed"
-          style={{ display: 'block' }}
-        />
-      </footer>
-    </section>
-  );
-}
+    <Switch>
+      <Route path="/mon" component={Mon} />
+      <Route path="/tue" component={Tue} />
+      <Route path="/wed" component={Wed} />
+      <Route path="/thu" component={Thu} />
+      <Route path="/fri" component={Fri} />
+    </Switch>
+  </BrowserRouter>
+);
 
 export default App;
